@@ -13,3 +13,5 @@ Implementation of Discord's Rich Presence using Python. Based off of [Snazzah's 
 ## Example implementation
 
 An example implementation can be found in `example.py`
+Adobe XD module added. 
+for more modules Mail me at niveshbirangal@gmail.com
