@@ -7,7 +7,7 @@
 <a href="https://github.com/niveshbirangal/discord-rpc/stargazers"><img src="https://img.shields.io/github/stars/niveshbirangal/discord-rpc" alt="Stars Badge"/></a>
 <a href="https://github.com/niveshbirangal/discord-rpc/network/members"><img src="https://img.shields.io/github/forks/niveshbirangal/discord-rpc" alt="Forks Badge"/></a>
 <a href="https://github.com/niveshbirangal/discord-rpc/issues"><img src="https://img.shields.io/github/issues/niveshbirangal/discord-rpc" alt="Issues Badge"/></a>
-### Requirement:
+### Requirements:
 ![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)
 ### Setup:
 clone this to your local device:
@@ -18,6 +18,8 @@ Go to the developer portal and create an application:
 ```bash
 https://discord.com/developers/applications
 ```
+<img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/createapp.gif'>
+Add assets to your application:
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/createapp.gif'>
 
 
