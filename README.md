@@ -18,7 +18,7 @@ Go to the developer portal and create an application:
 ```bash
 https://discord.com/developers/applications
 ```
-<img align="right" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/intro.gif' width="150">
+<img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/createapp.gif'>
 
 
 
