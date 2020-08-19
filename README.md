@@ -1,4 +1,5 @@
 <h1 align="center">Discord RPC</h1>
+Discord RPC is a library for interfacing your game with a locally running Discord desktop client
 <img align="right" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/intro.gif' width="150">
 
 ### Status:
@@ -8,7 +9,8 @@
 <a href="https://github.com/niveshbirangal/discord-rpc/issues"><img src="https://img.shields.io/github/issues/niveshbirangal/discord-rpc" alt="Issues Badge"/></a>
 ### Requirement:
 ![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)
-### Setup
+### Setup:
+
 
 
 
