@@ -1,4 +1,4 @@
-<img align="right" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/intro.gif' width="150">
+<img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/intro.gif' width="150">
 <h1 align="center">Discord RPC</h1>
 
 ### Status:
