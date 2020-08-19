@@ -20,7 +20,7 @@ https://discord.com/developers/applications
 ```
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/createapp.gif'>
 Add assets(image) to your application:
-<br>
+<br><br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/selectimage.png'>
 
 
