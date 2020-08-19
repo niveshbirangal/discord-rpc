@@ -10,10 +10,11 @@
 ### Requirement:
 ![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)
 ### Setup:
-Use the git clone
+clone this to your local device
 ```bash
 git clone git@github.com:niveshbirangal/discord-rpc.git
 ```
+
 
 
 
