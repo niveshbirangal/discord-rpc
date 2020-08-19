@@ -19,7 +19,7 @@ Go to the developer portal and create an application:
 https://discord.com/developers/applications
 ```
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/createapp.gif'>
-<br><br>
+<br><br />
 Add assets(image) to your application:
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/selectimage.png'>
