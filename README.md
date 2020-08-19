@@ -6,3 +6,8 @@
 <a href="https://github.com/niveshbirangal/discord-rpc/stargazers"><img src="https://img.shields.io/github/stars/niveshbirangal/discord-rpc" alt="Stars Badge"/></a>
 <a href="https://github.com/niveshbirangal/discord-rpc/network/members"><img src="https://img.shields.io/github/forks/niveshbirangal/discord-rpc" alt="Forks Badge"/></a>
 <a href="https://github.com/niveshbirangal/discord-rpc/issues"><img src="https://img.shields.io/github/issues/niveshbirangal/discord-rpc" alt="Issues Badge"/></a>
+### Requirement:
+![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)
+
+
+
