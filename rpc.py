@@ -14,7 +14,6 @@ import sys
 import struct
 import uuid
 
-
 OP_HANDSHAKE = 0
 OP_FRAME = 1
 OP_CLOSE = 2
