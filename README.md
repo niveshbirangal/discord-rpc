@@ -1,5 +1,4 @@
 <h1 align="center">Discord RPC</h1>
-<h3 align="center">Fixed time stamp issue</h3>
 <img align="right" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/intro.gif' width="150">
 
 ### Status:
