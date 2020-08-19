@@ -10,9 +10,13 @@
 ### Requirement:
 ![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)
 ### Setup:
-clone this to your local device
+clone this to your local device:
 ```bash
 git clone git@github.com:niveshbirangal/discord-rpc.git
+```
+Then create an application:
+```bash
+https://discord.com/developers/applications
 ```
 
 
