@@ -14,10 +14,13 @@ clone this to your local device:
 ```bash
 git clone git@github.com:niveshbirangal/discord-rpc.git
 ```
-Then create an application:
+Go to the developer portal and create an application:
 ```bash
 https://discord.com/developers/applications
 ```
+<img align="right" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/intro.gif' width="150">
+
+
 
 
 
