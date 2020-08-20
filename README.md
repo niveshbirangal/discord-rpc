@@ -75,3 +75,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [<img align="left" alt="niveshbirangal | Instagram" width="32px" src="https://raw.githubusercontent.com/niveshbirangal/niveshbirangal/master/source/instagram.svg"/>][instagram]
 [<img align="left" alt="niveshbirangal | YouTube" width="32px" src="https://raw.githubusercontent.com/niveshbirangal/niveshbirangal/master/source/youtube.svg"/>][youtube]
 
+[website]: https://niveshb.com
+[youtube]: https://www.youtube.com/channel/UCpwUP_HiOyG_GHluWpQK59g?view_as=subscriber
+[instagram]: https://instagram.com/neobirangal
+[linkedin]: https://linkedin.com/in/niveshbirangal
