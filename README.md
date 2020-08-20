@@ -23,13 +23,13 @@ https://discord.com/developers/applications
 Add assets(image) to your application
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/selectimage.png'>
-<br><br />
-Select images and clear all fields except `PARTY ID` and `JOIN SECRET`
+<br><br /> 
+
+#### Select images and clear all fields except `PARTY ID` and `JOIN SECRET`
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/fileds.png'>
 <br><br />
 Now go to example.py, put your client id, and change the activity code according to your best fit
-<br>
 
 ```bash
  activity = {
