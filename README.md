@@ -29,6 +29,7 @@ Select images and clear all fields except PARTY ID and join secret
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/fileds.png'>
 <br><br />
 Now go to example.py, put your client id, and change the activity code according to your best fit
+<br>
 
 ```bash
  activity = {
