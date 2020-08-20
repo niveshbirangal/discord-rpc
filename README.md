@@ -24,7 +24,7 @@ Add assets(image) to your application
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/selectimage.png'>
 <br><br />
-Select images and clear all fields except PARTY ID and join secret
+Select images and clear all fields except `PARTY ID` and `JOIN SECRET`
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/fileds.png'>
 <br><br />
@@ -68,6 +68,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
+
 
 <!-- CONTACT -->
 ## Connect with me:
