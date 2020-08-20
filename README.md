@@ -1,5 +1,4 @@
 <h1 align="center">Discord RPC</h1>
-<h5 align="center"> Readme is still updating please wait 1-2 days</h5>
 <h5 align="center">Discord RPC is a library for interfacing your game with a locally running Discord desktop client</h5>
 <img align="right" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/intro.gif' width="150">
 
@@ -9,7 +8,7 @@
 <a href="https://github.com/niveshbirangal/discord-rpc/network/members"><img src="https://img.shields.io/github/forks/niveshbirangal/discord-rpc" alt="Forks Badge"/></a>
 <a href="https://github.com/niveshbirangal/discord-rpc/issues"><img src="https://img.shields.io/github/issues/niveshbirangal/discord-rpc" alt="Issues Badge"/></a>
 ### Requirements:
-![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)
+![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)3.0 and above
 ### Setup:
 clone this to your local device
 ```bash
@@ -69,7 +68,10 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
+## Connect with me:
+[<img align="left" alt="niveshb.com" width="32px" src="https://raw.githubusercontent.com/niveshbirangal/niveshbirangal/master/source/website.svg"/>][website]
+[<img align="left" alt="niveshbirangal | LinkedIn" width="32px" src="https://raw.githubusercontent.com/niveshbirangal/niveshbirangal/master/source/linkedin.svg"/>][linkedin]
+[<img align="left" alt="niveshbirangal | Instagram" width="32px" src="https://raw.githubusercontent.com/niveshbirangal/niveshbirangal/master/source/instagram.svg"/>][instagram]
+[<img align="left" alt="niveshbirangal | YouTube" width="32px" src="https://raw.githubusercontent.com/niveshbirangal/niveshbirangal/master/source/youtube.svg"/>][youtube]
 
