@@ -11,17 +11,17 @@
 ### Requirements:
 ![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)
 ### Setup:
-clone this to your local device:
+clone this to your local device
 ```bash
 git clone git@github.com:niveshbirangal/discord-rpc.git
 ```
-Go to the developer portal and create an application:
+Go to the developer portal and create an application
 ```bash
 https://discord.com/developers/applications
 ```
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/createapp.gif'>
 <br><br />
-Add assets(image) to your application:
+Add assets(image) to your application
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/selectimage.png'>
 <br><br />
@@ -29,7 +29,7 @@ Select images and clear all fields except PARTY ID and join secret
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/fileds.png'>
 <br><br />
-Now go to example.py, put your client id, and change the activity code according to your best fit.
+Now go to example.py, put your client id, and change the activity code according to your best fit
 
 ```bash
  activity = {
@@ -45,6 +45,10 @@ Now go to example.py, put your client id, and change the activity code according
                 "large_image": "illustrator"  # must match the image key
             }
         }
+```
+Make sure your desktop app is running and then run the example.py
+```bash
+python3 example.py
 ```
 
 
