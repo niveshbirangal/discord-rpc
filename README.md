@@ -50,7 +50,7 @@ Make sure your desktop app is running and then run the example.py
 ```bash
 python3 example.py
 ```
-
+<img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/activity.png'>
 
 
 
