@@ -28,10 +28,23 @@ Add assets(image) to your application:
 Select images and clear all fields except PARTY ID and join secret
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/fileds.png'>
-
-
-
-
+<br><br />
+Now go to example.py, put your client id, and change the activity code according to your best fit.
+```bash
+ activity = {
+            "state": "Adobe",  # anything you like
+            "details": "Editing",  # anything you like
+            "timestamps": {
+                "start": start_time
+            },
+            "assets": {
+                "small_text": "Adobe",  # anything you like
+                "small_image": "adobe",  # must match the image key
+                "large_text": "Illustrator",  # anything you like
+                "large_image": "illustrator"  # must match the image key
+            }
+        }
+```
 
 
 
