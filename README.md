@@ -12,7 +12,7 @@
 ### Setup:
 clone this to your local device
 ```bash
-git clone git@github.com:niveshbirangal/discord-rpc.git
+git clone https://github.com/niveshbirangal/discord-rpc.git
 ```
 Go to the developer portal and create an application
 ```bash
