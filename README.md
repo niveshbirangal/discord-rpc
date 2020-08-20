@@ -24,8 +24,7 @@ Add assets(image) to your application
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/selectimage.png'>
 <br><br /> 
-
-#### Select images and clear all fields except `PARTY ID` and `JOIN SECRET`
+Select images and clear all fields except <code>PARTY ID</code> and <code>JOIN SECRET</code>
 <br><br>
 <img align="center" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/fileds.png'>
 <br><br />
