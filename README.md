@@ -76,7 +76,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [<img align="left" alt="niveshbirangal | Instagram" width="32px" src="https://raw.githubusercontent.com/niveshbirangal/niveshbirangal/master/source/instagram.svg"/>][instagram]
 [<img align="left" alt="niveshbirangal | YouTube" width="32px" src="https://raw.githubusercontent.com/niveshbirangal/niveshbirangal/master/source/youtube.svg"/>][youtube]
 
-<h5 align="center">If you want custom assets you can open an issue I will happily add the asset file</h5>
+<br><h5 align="center">If you want custom assets you can open an issue I will happily add the asset file</h5>
 
 
 [website]: https://niveshb.com
