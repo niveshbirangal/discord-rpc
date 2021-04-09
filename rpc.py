@@ -6,26 +6,21 @@
 # * https://discordapp.com/developers/docs/rich-presence/how-to#updating-presence-update-presence-payload-fields
 
 from abc import ABCMeta, abstractmethod
-import json
-import logging
-import os
-import socket
-import sys
-import struct
-import uuid
+from sys import platform
+from uuid import uuid4
+from socket import AF_UNIX, socket
+import json, logging, os, struct
 
-OP_HANDSHAKE = 0
-OP_FRAME = 1
-OP_CLOSE = 2
-OP_PING = 3
-OP_PONG = 4
+OP = {
+    "HANDSHAKE": 0,
+    "FRAME": 1,
+    "CLOSE": 2
+}
 
 logger = logging.getLogger(__name__)
 
-
 class DiscordIpcError(Exception):
     pass
-
 
 class DiscordIpcClient(metaclass=ABCMeta):
 
@@ -42,10 +37,10 @@ class DiscordIpcClient(metaclass=ABCMeta):
         self.client_id = client_id
         self._connect()
         self._do_handshake()
-        logger.info("connected via ID %s", client_id)
+        logger.info(f"connected via ID {client_id}")
 
     @classmethod
-    def for_platform(cls, client_id, platform=sys.platform):
+    def for_platform(cls, client_id):
         if platform == 'win32':
             return WinDiscordIpcClient(client_id)
         else:
@@ -56,12 +51,12 @@ class DiscordIpcClient(metaclass=ABCMeta):
         pass
 
     def _do_handshake(self):
-        ret_op, ret_data = self.send_recv({'v': 1, 'client_id': self.client_id}, op=OP_HANDSHAKE)
+        ret_op, ret_data = self.send_recv({'v': 1, 'client_id': self.client_id}, op=OP.HANDSHAKE)
         # {'cmd': 'DISPATCH', 'data': {'v': 1, 'config': {...}}, 'evt': 'READY', 'nonce': None}
-        if ret_op == OP_FRAME and ret_data['cmd'] == 'DISPATCH' and ret_data['evt'] == 'READY':
+        if ret_op == OP.FRAME and ret_data['cmd'] == 'DISPATCH' and ret_data['evt'] == 'READY':
             return
         else:
-            if ret_op == OP_CLOSE:
+            if ret_op == OP.CLOSE:
                 self.close()
             raise RuntimeError(ret_data)
 
@@ -89,7 +84,7 @@ class DiscordIpcClient(metaclass=ABCMeta):
     def close(self):
         logger.warning("closing connection")
         try:
-            self.send({}, op=OP_CLOSE)
+            self.send({}, op=OP.CLOSE)
         finally:
             self._close()
 
@@ -103,12 +98,12 @@ class DiscordIpcClient(metaclass=ABCMeta):
     def __exit__(self, *_):
         self.close()
 
-    def send_recv(self, data, op=OP_FRAME):
+    def send_recv(self, data, op=OP.FRAME):
         self.send(data, op)
         return self.recv()
 
-    def send(self, data, op=OP_FRAME):
-        logger.debug("sending %s", data)
+    def send(self, data, op=OP.FRAME):
+        logger.debug(f"sending {data}")
         data_str = json.dumps(data, separators=(',', ':'))
         data_bytes = data_str.encode('utf-8')
         header = struct.pack("<II", op, len(data_bytes))
@@ -123,19 +118,20 @@ class DiscordIpcClient(metaclass=ABCMeta):
         op, length = self._recv_header()
         payload = self._recv_exactly(length)
         data = json.loads(payload.decode('utf-8'))
-        logger.debug("received %s", data)
+        logger.debug(f"received {data}")
         return op, data
 
     def set_activity(self, act):
         # act
         data = {
             'cmd': 'SET_ACTIVITY',
-            'args': {'pid': os.getpid(),
-                     'activity': act},
-            'nonce': str(uuid.uuid4())
+            'args': {
+                'pid': os.getpid(),
+                'activity': act
+            },
+            'nonce': str(uuid4())
         }
         self.send(data)
-
 
 class WinDiscordIpcClient(DiscordIpcClient):
 
@@ -148,8 +144,7 @@ class WinDiscordIpcClient(DiscordIpcClient):
                 self._f = open(path, "w+b")
             except OSError as e:
                 logger.error("failed to open {!r}: {}".format(path, e))
-            else:
-                break
+            else: break
         else:
             return DiscordIpcError("Failed to connect to Discord pipe")
 
@@ -165,11 +160,10 @@ class WinDiscordIpcClient(DiscordIpcClient):
     def _close(self):
         self._f.close()
 
-
 class UnixDiscordIpcClient(DiscordIpcClient):
 
     def _connect(self):
-        self._sock = socket.socket(socket.AF_UNIX)
+        self._sock = socket(AF_UNIX)
         pipe_pattern = self._get_pipe_pattern()
 
         for i in range(10):
@@ -190,8 +184,7 @@ class UnixDiscordIpcClient(DiscordIpcClient):
         env_keys = ('XDG_RUNTIME_DIR', 'TMPDIR', 'TMP', 'TEMP')
         for env_key in env_keys:
             dir_path = os.environ.get(env_key)
-            if dir_path:
-                break
+            if dir_path: break
         else:
             dir_path = '/tmp'
         return os.path.join(dir_path, 'discord-ipc-{}')
