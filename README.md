@@ -1,6 +1,6 @@
 <h1 align="center">Discord RPC</h1>
 <h5 align="center">"Discord RPC is a library for interfacing your game with a locally running Discord desktop client"</h5>
-<img align="right" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/intro.gif' width="150">
+<!--<img align="right" src='https://github.com/niveshbirangal/discord-rpc/blob/master/readmeassets/intro.gif' width="150">-->
 
 ### Status:
 <a href="https://img.shields.io/youtube/views/udY540zICDY?style=social"><img src="https://img.shields.io/youtube/views/udY540zICDY?style=social" alt="Stars Badge"/></a>
